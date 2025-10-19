@@ -45,7 +45,10 @@ hr {
 }
 @media (max-width: 768px) {
   .container .container-text {
-    padding: auto;
+    padding: 10px;
+  }
+  .container .container-text header {
+    width: 100%;
   }
   .container .container-text header h1 {
     font-size: 30px;
