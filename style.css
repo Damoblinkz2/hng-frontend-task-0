@@ -43,29 +43,6 @@ hr {
     grid-template-columns: 1fr 1fr;
   }
 }
-/* @media (max-width: 768px) {
-  .container .container-text {
-    padding: 10px;
-  }
-  .container .container-text header {
-    width: 100%;
-    padding: 0 5%;
-  }
-  .container .container-text header h1 {
-    font-size: 25px;
-  }
-  .container .container-text header h2 {
-    font-size: 20px;
-  }
-  .container .container-text .bio {
-    width: 100%;
-    padding: 0 5%;
-  }
-  .container .container-text section {
-    width: 100%;
-    padding: 0 5%;
-  }
-} */
 
 /* Image container styling */
 .container .container-img {
@@ -178,7 +155,14 @@ hr {
 /* Hobbies and dislikes list styling */
 .hobbies-dislikes-nav .ul {
   display: grid;
+  grid-template-rows: 1fr;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .hobbies-dislikes-nav .ul {
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /* Hobbies and dislikes item styles */
