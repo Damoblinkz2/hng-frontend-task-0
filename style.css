@@ -173,6 +173,7 @@ hr {
 @media (max-width: 768px) {
   .hobbies-dislikes-nav .ul-dislikes,
   .hobbies-dislikes-nav .ul-hobbies {
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto;
   }
 }
