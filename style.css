@@ -127,6 +127,7 @@ hr {
   border-radius: 5px;
   padding: 10px;
   color: #970747;
+  width: 90%;
 }
 
 /* List styling for skills and socials */
@@ -134,6 +135,7 @@ hr {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 /* Skill and social icon styles */
