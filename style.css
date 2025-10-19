@@ -155,14 +155,14 @@ hr {
 /* Hobbies and dislikes list styling */
 .hobbies-dislikes-nav .ul {
   display: grid;
-  grid-template-rows: 1fr;
+  grid: auto/auto auto auto;
   gap: 10px;
 }
 
 @media (max-width: 768px) {
-  .hobbies-dislikes-nav .ul {
+  /* .hobbies-dislikes-nav .ul {
     grid-template-rows: 1fr 1fr;
-  }
+  } */
 }
 
 /* Hobbies and dislikes item styles */
