@@ -49,9 +49,21 @@ hr {
   }
   .container .container-text header {
     width: 100%;
+    padding: 0 5%;
   }
   .container .container-text header h1 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .container .container-text header h2 {
+    font-size: 20px;
+  }
+  .container .container-text .bio {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .container .container-text section {
+    width: 100%;
+    padding: 0 5%;
   }
 }
 
@@ -73,7 +85,7 @@ hr {
 /* Text container padding */
 .container .container-text {
   padding: 10%;
-  background: red;
+  background: blue;
 }
 
 /* Tab navigation styles */
