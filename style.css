@@ -155,7 +155,8 @@ hr {
 /* Hobbies and dislikes list styling */
 .hobbies-dislikes-nav .ul {
   display: grid;
-  grid: auto/auto auto auto;
+  background: blue;
+  grid-template-columns: auto auto auto;
   gap: 10px;
 }
 
