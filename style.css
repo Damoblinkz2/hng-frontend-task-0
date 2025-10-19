@@ -85,7 +85,6 @@ hr {
 /* Text container padding */
 .container .container-text {
   padding: 10%;
-  background: blue;
 }
 
 /* Tab navigation styles */
@@ -178,7 +177,7 @@ hr {
 
 /* Hobbies and dislikes list styling */
 .hobbies-dislikes-nav .ul {
-  display: flex;
+  display: grid;
   gap: 10px;
 }
 
