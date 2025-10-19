@@ -43,7 +43,7 @@ hr {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container .container-text {
     padding: 10px;
   }
@@ -65,7 +65,7 @@ hr {
     width: 100%;
     padding: 0 5%;
   }
-}
+} */
 
 /* Image container styling */
 .container .container-img {
