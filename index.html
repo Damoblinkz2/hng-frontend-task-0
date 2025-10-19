@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile card</title>
+  </head>
+  <body>
+    <!-- Main wrapper for centering the profile card -->
+    <div class="div">
+      <div class="container" data-testid="test-profile-card">
+        <!-- Profile image section -->
+        <div class="container-img">
+          <img
+            src="hero.jpg"
+            alt="profile-image"
+            data-testid="test-user-avatar"
+          />
+        </div>
+        <!-- Main content area -->
+        <main class="container-text">
+          <!-- Header with name and title -->
+          <header>
+            <h1 class="poppins-regular" data-testid="test-user-name">
+              Adedamola Olatunji
+            </h1>
+            <h2 data-testid="test-user-title" class="poppins-light">
+              Fullstack Web Dev.
+            </h2>
+          </header>
+          <br />
+          <!-- Bio paragraph -->
+          <p data-testid="test-user-bio" class="poppins-extralight">
+            👋 I'm Adedamola, A passionate Full-Stack Developer with a strong
+            focus on building efficient, scalable, and user-friendly web
+            applications. I work across both front-end and back-end technologies
+            — creating clean, responsive interfaces while ensuring robust
+            server-side architecture. I love solving complex problems, learning
+            new tools, and turning ideas into fully functional digital
+            experiences.
+          </p>
+          <br />
+          <!-- Current time display in milliseconds -->
+          <div class="clock-div">
+            <p class="poppins-extralight">Current Time (milliseconds)</p>
+            <span
+              class="clock poppins-extrabold"
+              id="time_now"
+              data-testid="test-user-time"
+            ></span>
+          </div>
+          <br />
+          <!-- Skills section -->
+          <section class="skill-nav">
+            <h3 class="poppins-extrabold">Skills</h3>
+            <ul class="ul">
+              <li class="poppins-extralight skill">
+                <img src="icons/icons8-react-80.png" />
+                <span>
+                  <p>ReactJs</p>
+                </span>
+              </li>
+              <li class="poppins-extralight skill">
+                <img src="icons/icons8-node-js-64.png" />
+                <p>NodeJs</p>
+              </li>
+              <li class="poppins-extralight skill">
+                <img src="icons/icons8-mongodb-96.png" />
+                <p>MongoDb</p>
+              </li>
+              <li class="poppins-extralight skill">
+                <img src="icons/icons8-express-js-50.png" />
+                <p>ExpressJs</p>
+              </li>
+              <li class="poppins-extralight skill">
+                <img src="icons/icons8-github-logo-60.png" />
+                <p>Git/Github</p>
+              </li>
+            </ul>
+          </section>
+          <hr />
+          <!-- Hobbies and dislikes tabbed section -->
+          <section class="hobbies-dislikes-nav">
+            <!-- Tab links -->
+            <div class="tab">
+              <button
+                class="tablinks"
+                id="defaultOpen"
+                onclick="openCity(event, 'Hobbies')"
+              >
+                Hobbies
+              </button>
+              <button class="tablinks" onclick="openCity(event, 'Dislikes')">
+                Dislikes
+              </button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Hobbies" class="tabcontent">
+              <ul class="ul" data-testid="test-user-hobbies">
+                <li class="poppins-extralight hobbies">
+                  <p>Singing</p>
+                </li>
+                <li class="poppins-extralight hobbies">
+                  <p>Cooking</p>
+                </li>
+                <li class="poppins-extralight hobbies">
+                  <p>Coding</p>
+                </li>
+                <li class="poppins-extralight hobbies">
+                  <p>Collaborating</p>
+                </li>
+              </ul>
+            </div>
+
+            <div id="Dislikes" class="tabcontent">
+              <ul class="ul" data-testid="test-user-dislikes">
+                <li class="poppins-extralight dislikes">
+                  <p>Mosquitoes</p>
+                </li>
+                <li class="poppins-extralight dislikes">
+                  <p>Coding bugs</p>
+                </li>
+                <li class="poppins-extralight dislikes">
+                  <p>Missed deadlines</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <hr />
+          <!-- Footer with social links -->
+          <footer>
+            <ul class="ul social-ul" data-testid="test-user-social-links">
+              <li
+                class="poppins-extralight socials"
+                data-testid="test-user-social-instagram"
+              >
+                <div>
+                  <a
+                    href="https://www.instagram.com/_damoblinkz?igsh=Mm84M2ZrZTd6Zmho"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="icons/icons8-instagram-logo-50.png"
+                      alt="instagram-img"
+                    />
+                  </a>
+                </div>
+              </li>
+              <li
+                class="poppins-extralight socials"
+                data-testid="test-user-social-linkedin"
+              >
+                <a
+                  href="https://www.linkedin.com/in/adedamola-olatunji-19191b213"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="icons/icons8-linkedin-50.png" alt="linked-img" />
+                </a>
+              </li>
+              <li
+                class="poppins-extralight socials"
+                data-testid="test-user-social-github"
+              >
+                <a
+                  href="https://github.com/damoblinkz2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="icons/icons8-github-logo-60.png" alt="gitbub-img" />
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

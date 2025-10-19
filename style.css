@@ -1,0 +1,246 @@
+/* Import Google Fonts for Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General styles */
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+/* Main wrapper for centering the container */
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px 20px; */
+}
+
+/* Horizontal rule styling */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #3b1b29;
+  margin: 20px 0;
+}
+
+/* Main container for the profile card */
+.container {
+  background-color: #dcdad7;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin: 50px 0;
+  gap: 20px;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Image container styling */
+.container .container-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* Image styling within container */
+.container .container-img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* Text container padding */
+.container .container-text {
+  padding: 10%;
+}
+
+/* Tab navigation styles */
+.container .container-text .tab {
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  gap: 3px;
+}
+
+/* Tab button styles */
+.container .container-text .tab button {
+  background-color: #970747;
+  border-radius: 5px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+/* Tab button hover effect */
+.container .container-text .tab button:hover {
+  background-color: #4a2133;
+}
+
+/* Active tab button style */
+.container .container-text .tab button.active {
+  background-color: #dc1770;
+}
+
+/* Tab content styling */
+.container .container-text .tabcontent {
+  display: none;
+  padding: 12px;
+  width: 90%;
+  border: 1px solid #970747;
+  margin-top: 3px;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Animation for tab content fade in */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heading color */
+.container .container-text h2 {
+  color: #970747;
+}
+
+/* Clock display styling */
+.container .container-text .clock-div {
+  border: 1px solid #970747;
+  background-color: #eccdd8;
+  border-radius: 5px;
+  padding: 10px;
+  color: #970747;
+}
+
+/* List styling for skills and socials */
+.container .container-text .ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Skill and social icon styles */
+.container .container-text .ul .skill,
+.container .container-text .ul .socials {
+  background-color: #970747;
+  transition: all 0.6s ease-out;
+  border-radius: 50%;
+  height: 25px;
+  width: auto;
+  max-width: 25px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Hobbies and dislikes list styling */
+.hobbies-dislikes-nav .ul {
+  display: flex;
+  gap: 10px;
+}
+
+/* Hobbies and dislikes item styles */
+.container .container-text .ul .dislikes,
+.container .container-text .ul .hobbies {
+  background-color: #970747;
+  color: #fff;
+  padding: 5px 10px;
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+/* Font size for hobbies and dislikes text */
+.container .container-text .ul .dislikes p,
+.container .container-text .ul .hobbies p {
+  font-size: 12px;
+}
+
+/* Social links width */
+.container .container-text .social-ul {
+  width: 50%;
+}
+
+/* Social icon hover effect */
+.container .container-text .ul .socials:hover {
+  background-color: #4a2133;
+}
+
+/* Social icon active effect */
+.container .container-text .ul .socials:active {
+  background-color: #dc1770;
+}
+
+/* Social icon image sizing */
+.container .container-text .ul .socials a img {
+  width: 100%;
+}
+
+/* Skill icon hover expansion */
+.container .container-text .ul .skill:hover {
+  max-width: 130px;
+  border-radius: 15px;
+}
+
+/* Skill text styling and animation */
+.container .container-text .ul .skill p {
+  font-size: 12px;
+  padding: 10px;
+  transform: translateY(-10px);
+  width: 0;
+  transition: all 0 ease-out;
+}
+
+/* Skill text on hover */
+.container .container-text .ul .skill:hover p {
+  width: auto;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Poppins font classes */
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
