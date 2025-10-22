@@ -27,3 +27,23 @@ document.getElementById("defaultOpen").click();
 setInterval(() => {
   document.getElementById("time_now").innerText = Date.now();
 }, 1000);
+
+// Form validation for contact.html
+document.addEventListener("DOMContentLoaded", function () {
+  const textarea = document.getElementById("textarea");
+  const submitBtn = document.querySelector(".submit-btn");
+
+  if (textarea && submitBtn) {
+    // Initially disable the submit button
+    submitBtn.disabled = true;
+
+    // Add event listener to textarea for input changes
+    textarea.addEventListener("input", function () {
+      if (textarea.value.length >= 10) {
+        submitBtn.disabled = false;
+      } else {
+        submitBtn.disabled = true;
+      }
+    });
+  }
+});

@@ -116,18 +116,36 @@ hr {
 }
 
 /* Heading color */
-.container .container-text h2 {
+.container .container-text h2,
+.container .container-text h4,
+h3 {
   color: #970747;
 }
 
-/* Clock display styling */
-.container .container-text .clock-div {
+/* Clock display styling and email div */
+.container .container-text .clock-div,
+.container .container-text .email-div {
   border: 1px solid #970747;
   background-color: #eccdd8;
   border-radius: 5px;
   padding: 10px;
   color: #970747;
   width: 90%;
+}
+
+/* //email icon */
+.container .container-text .email-div .email-icon {
+  background-color: #970747;
+  border-radius: 50%;
+  height: 25px;
+  width: auto;
+  max-width: 25px;
+  padding: 5px;
+}
+
+/* email icon image sizing */
+.container .container-text .email-div .email-icon img {
+  width: 100%;
 }
 
 /* List styling for skills and socials */
@@ -237,6 +255,91 @@ hr {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+}
+
+/* contact form */
+
+.form {
+  padding: 10px;
+}
+
+.form .input-div {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.form .input-div .input-label {
+  margin-bottom: 15px;
+}
+
+.form .input-div .input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #970747;
+  height: 40px;
+  padding-left: 10px;
+  color: #970747;
+}
+.form .input-div #textarea {
+  height: 100px;
+  border: 2px solid #970747;
+}
+
+.form .input-div .input:hover {
+  border-bottom: 4px solid #dc1770;
+}
+
+.form .input-div .submit-btn {
+  width: 110px;
+  max-width: 50%;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #970747;
+  border: none;
+  color: #fff;
+}
+.form .input-div .submit-btn:hover {
+  background-color: transparent;
+  border: 2px solid #970747;
+  color: #970747;
+}
+.form .input-div .submit-btn:active {
+  background-color: #dc1770;
+  border: none;
+  color: #fff;
+}
+
+/* about page */
+.about section {
+  margin: 25px 0;
+}
+
+.about section h3 {
+  margin: 5px 0;
+}
+
+.pages {
+  margin-top: 30px;
+  padding: 10px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.pages p {
+  background-color: #970747;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.pages p:hover {
+  background-color: #4a2133;
+  border: 1px solid #970747;
+}
+
+.pages p a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Poppins font classes */

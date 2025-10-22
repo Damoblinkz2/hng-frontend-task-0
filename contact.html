@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact me</title>
+  </head>
+  <body>
+    <!-- Main wrapper for centering the profile card -->
+    <div class="div">
+      <div class="container" data-testid="test-profile-card">
+        <!-- Main content area -->
+        <main class="container-text">
+          <!-- Header with name and title -->
+          <header>
+            <h1 class="poppins-regular">Get in touch</h1>
+            <h4>I'll like to hear from you</h4>
+          </header>
+          <br />
+          <!-- Bio paragraph -->
+          <p class="poppins-extralight bio">
+            If you have inquires or just want to say hi! <br />
+            Pls use contact form
+          </p>
+          <br /><br /><br />
+
+          <div class="email-div">
+            <div class="email-icon">
+              <img src="icons/icons8-email-50.png" alt="instagram-img" />
+            </div>
+            <p class="poppins-extralight">adedamolatomide@gmail.com</p>
+          </div>
+        </main>
+        <!-- Main content area -->
+        <main class="container-text">
+          <!-- Skills section -->
+          <section>
+            <form class="form">
+              <h2 class="poppins-regular">Contact</h2>
+              <div class="input-div">
+                <label for="" class="poppins-light input-label">Full name</label
+                ><input
+                  type="text"
+                  data-testid="test-contact-name"
+                  name=""
+                  placeholder="full name"
+                  class="input"
+                  id="full_class"
+                />
+              </div>
+              <div class="input-div">
+                <label for="" class="poppins-light input-label">Email*</label
+                ><input
+                  type="email"
+                  data-testid="test-contact-email"
+                  name=""
+                  required
+                  placeholder="example@email.com"
+                  class="input"
+                  id="email"
+                />
+              </div>
+              <div class="input-div">
+                <label for="" class="poppins-light input-label">Subject</label
+                ><input
+                  type="text"
+                  data-testid="test-contact-subject"
+                  name=""
+                  placeholder="Subject"
+                  class="input"
+                  id="subject"
+                />
+              </div>
+              <div class="input-div">
+                <label for="" class="poppins-light input-label"
+                  >Write a message</label
+                ><textarea
+                  name=""
+                  data-testid="test-contact-message"
+                  placeholder="tell us what you have in mind"
+                  class="input"
+                  id="textarea"
+                ></textarea>
+              </div>
+              <div class="input-div">
+                <button class="submit-btn" data-testid="test-contact-submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
