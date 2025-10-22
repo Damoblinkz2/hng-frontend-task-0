@@ -9,6 +9,8 @@ A responsive profile card webpage showcasing personal information, skills, hobbi
 - **Skills Section**: Lists key skills with icons (React, Node.js, MongoDB, Express.js, Git/GitHub).
 - **Tabbed Content**: Interactive tabs for Hobbies and Dislikes.
 - **Social Links**: Links to Instagram, LinkedIn, and GitHub with icons.
+- **About Page**: Detailed bio, goals, areas of low confidence, and personal notes.
+- **Contact Page**: Contact form for inquiries and email information.
 - **Responsive Design**: Adapts to different screen sizes using CSS Grid.
 - **Animations**: Smooth transitions and hover effects on elements.
 
@@ -23,6 +25,8 @@ A responsive profile card webpage showcasing personal information, skills, hobbi
 ```
 frontend-stage-0/
 ├── index.html          # Main HTML file
+├── about.html          # About page with bio and personal details
+├── contact.html        # Contact page with form and email
 ├── style.css           # CSS styles
 ├── script.js           # JavaScript functionality
 ├── hero.jpg            # Profile image
